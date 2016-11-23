@@ -1,0 +1,148 @@
+/* working now block*/
+
+html,
+body {
+    background-color: skyblue;
+}
+
+#working-now {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    -webkit-box-pack: space-evenly;
+    justify-content: space-around;
+    border: 30px solid transparent;
+    -o-border-image: url(http://cis.bentley.edu/sandbox/wp-content/uploads/2016/11/border.png) 27 27 27 27 stretch stretch;
+    border-image: url(http://cis.bentley.edu/sandbox/wp-content/uploads/2016/11/border.png) 27 27 27 27 stretch stretch;
+}
+
+#main {
+    margin-top: 30px;
+}
+
+.working-item {
+    display: inline-block;
+    padding: 5px;
+}
+
+.working-item img {
+    display: block;
+    border-radius: 50%;
+}
+
+.working-item img:hover {
+    -webkit-animation: upDown 5s;
+    animation: upDown 5s;
+}
+
+.working-item figcaption {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+    text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+}
+
+.working-item figcaption::first-letter {
+    text-transform: uppercase;
+}
+
+#working-title {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    text-shadow: 5px 5px #ffffff
+}
+
+#working-title:hover {
+    -webkit-animation: tada 3s;
+    animation: tada 3s;
+}
+
+@-webkit-keyframes tada {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale(0.9) rotate(-3deg);
+        transform: scale(0.9) rotate(-3deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale(1.1) rotate(3deg);
+        transform: scale(1.1) rotate(3deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale(1.1) rotate(-3deg);
+        transform: scale(1.1) rotate(-3deg);
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0);
+    }
+}
+
+@keyframes tada {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    10%,
+    20% {
+        -webkit-transform: scale(0.9) rotate(-3deg);
+        transform: scale(0.9) rotate(-3deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: scale(1.1) rotate(3deg);
+        transform: scale(1.1) rotate(3deg);
+    }
+    40%,
+    60%,
+    80% {
+        -webkit-transform: scale(1.1) rotate(-3deg);
+        transform: scale(1.1) rotate(-3deg);
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0);
+    }
+}
+
+@-webkit-keyframes upDown {
+    0% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes upDown {
+    0% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
